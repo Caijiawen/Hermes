@@ -52,13 +52,13 @@ class OkexSpot(object):
         return False
         
     def initDepthData(self, date):
-        with h5py.File(f'/raid_disk/Caijiawen/data_saver/data/{self.symbol}/depth/{date}_depth.h5', 'r') as hf:
+        with h5py.File(f'/data/{self.symbol}/depth/{date}_depth.h5', 'r') as hf:
             self.depthData = hf['data'][:]
         self.depthPointer = 0
         self.depthRow = self.depthData.shape[0]
     
     def initTradesData(self, date):
-        with h5py.File(f'/raid_disk/Caijiawen/data_saver/data/{self.symbol}/trade/{date}_trade.h5', 'r') as hf:
+        with h5py.File(f'/data/{self.symbol}/trade/{date}_trade.h5', 'r') as hf:
             self.tradesData = hf['data'][:]
         self.tradesPointer = 0
         self.tradesRow = self.tradesData.shape[0]
