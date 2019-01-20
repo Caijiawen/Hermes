@@ -10,3 +10,5 @@ The code is based on Anaconda3.
 * Add sample data
 * Reorganize code structure (backtest, strategy, exchange)
 * Distill base classes 
+* Add Support for multiple exchanges
+* Add More Sample Strategy
