@@ -1,5 +1,5 @@
-from okexspot import *
-from grid_strategy import *
+from exchange.okexspot import *
+from strategy.grid_strategy import *
 
 class Backtest:
     def __init__(self , exchange , strategy  , time_range):

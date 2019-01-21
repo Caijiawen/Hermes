@@ -1,8 +1,8 @@
-from constants import *
+from .constants import *
 import h5py
 import numpy as np
 import datetime
-from exchange_datastructure import *
+from .exchange_datastructure import *
 from collections import OrderedDict
 
 class OkexSpot(object):
